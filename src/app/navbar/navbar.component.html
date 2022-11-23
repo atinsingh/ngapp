@@ -1,5 +1,5 @@
 <div  *ngIf="!mobileView"  class="flex py-12 justify-center space-x-12">
     <div *ngFor="let nav of navData" >
-       <a class="hover:bg-gray-200 p-2" href= {{nav.url}}> {{nav.title}} </a>
+       <a class="hover:bg-gray-200 p-2"  [routerLink]= "nav.url"> {{nav.title}} </a>
     </div>
 </div>
